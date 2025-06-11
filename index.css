@@ -5,6 +5,8 @@
     --dark-green: #1d301d;
     --light-green: #567d46;
     --mid-gren: #2f4f2f;
+    --lighter-green: #98dd7d;
+    --vibrant-green: #6deb3b;
 }
 
 @font-face {
@@ -21,14 +23,14 @@
     box-sizing: border-box;
 }
 
-/* Container principal do header */
+
 .header {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-/* Seção superior com logos e texto */
+
 .sc-collection {
     background-color: rgb(0, 0, 0);
     font-size: 25px;
@@ -65,7 +67,7 @@
     color: var(--white-ice);
 }
 
-/* Container da área de input e logo centralizada */
+
 .search-tab {
     display: flex;
     justify-content: space-between;
@@ -75,10 +77,10 @@
     margin-top: -0px; 
 }
 
-/* Estilo do input */
+
 .search-input-div {
     position: relative;
-    margin-top: 100px; 
+    margin-top: 78px; 
 }
 
 .search-input {
@@ -101,18 +103,18 @@
     pointer-events: none;
 }
 
-/* Logo no centro */
+
 .img-logo {
     width: 500px;
     height: auto;
     margin-right:150px ; 
-    margin-top: 50px; 
+    margin-top: 10px; 
 }
 .icons-right {
     display: flex;
     align-items: center;
     gap: 70px;
-    margin-top: 108px;
+    margin-top: 60px; 
     margin-right: 80px;
 }
 
@@ -130,14 +132,14 @@
 .topnav {
 background-color: var(--mid-gren);
 display: flex;
-justify-content: space-evenly; /* Distribui igualmente com espaçamento */
+justify-content: space-evenly; 
 align-items: center;
 padding: 3px 0;
 
 }
 
 
-/* Style the links inside the navigation bar */
+
 .topnav a {
   float: left;
   color: var(--white-ice);
@@ -151,5 +153,128 @@ padding: 3px 0;
     color: var(--light-green);
     transition: color 0.3s;
     
+}
+.label-sale {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+}
+
+.green-papper-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sale-text-container {
+    position: absolute;
+    top:35%;
+    left: 10px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.sale-title {
+    margin-top: 10px;
+    font-size: 50px;
+    font-style: bold;
+    color: var(--lighter-green);
+}
+
+.sale-text {
+    font-size: 25px;
+}
+.button-shop-sale{
+    background-color: var(--lighter-green);
+    color: var(--pure-black);
+    padding: 5px;
+    border-radius: 15px;
+    margin: 5px;
+    justify-content: center;
+    font-size: 25px;
+    border: none;    
+}
+.button-shop-sale:hover{
+    background-color: var(--pure-black);
+    color: var(--lighter-green);
+    cursor: pointer;
+    transition: color 0.3s;
+    
+}
+.grid-promos {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly; 
+}
+
+.small {
+  width: 300px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid var(--pure-black);
+  border-radius: 70px;
+  transition: transform 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.small img {
+  width: 100%;
+  height: 70%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto; 
+}
+
+.small:hover {
+  transform: scale(1.05);
+  
+}
+
+
+@media only screen and (max-width: 768px) {
+   .small {
+      width: 100%;   
+   }
+	.centered2 {
+    left: 33%;
+    top: 55%;
+  }
+}
+
+.centered {
+  position: absolute;
+  left: 20px; 
+  top: 390px;
+  font-size: 20px;
+  display: block;
+  color: var(--dark-green);
+  font-weight: bold;
+  transition: font-size 0.5s ease;
+}
+
+.centered2 {
+  position: absolute;
+  left: 20px;
+  top: 426px; 
+  font-size: 25px;
+  display: block;
+  color: var(--light-green);
+  font-weight: bold;
+  transition: font-size 0.5s ease;
+}
+
+
+.small:hover .arrow::before {
+    animation-name: offsetr;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 

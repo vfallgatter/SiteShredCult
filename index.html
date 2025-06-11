@@ -1,60 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ShredCult</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet" />
-
-    <!-- Ícones Material -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="/index.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShredCult</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <link rel="stylesheet" href="/index.css" />
 </head>
 <body>
-    <header>
-        <div class="header">
-            <div class="sc-collection">
-                <img class="img-logo-bear" src="/public/images/logo.png" alt="ShredBear" />
-                <p>
-                    Check out the new
-                    <span class="shredcult-font">ShredCult</span> collection
-                    <span class="button-here">here!</span>
-                </p>
-                <img class="img-logo-bear" src="/public/images/logo.png" alt="ShredBear" />
-            </div>
-
-            <div class="search-tab">
-                <!-- Input à esquerda -->
-                <div class="search-input-div">
-                    <span class="material-symbols-outlined">search</span>
-                    <input class="search-input" type="text" placeholder="Search here" />
-                </div>
-
-                <!-- Logo no meio -->
-                <img class="img-logo" src="/public/images/logo-name.png" alt="ShredCult" />
-                <div class="icons-right">
-                    <span class="material-symbols-outlined">favorite</span>
-                    <span class="material-symbols-outlined">shopping_cart</span>
-                </div>
-            </div>
+  <header>
+    <div class="header">
+      <div class="sc-collection">
+        <img class="img-logo-bear" src="/public/images/logo.png" alt="ShredBear" />
+        <p>
+          Check out the new
+          <span class="shredcult-font">ShredCult</span> collection
+          <span class="button-here">here!</span>
+        </p>
+        <img class="img-logo-bear" src="/public/images/logo.png" alt="ShredBear" />
+      </div>
+      <div class="search-tab">
+        <div class="search-input-div">
+          <span class="material-symbols-outlined">search</span>
+          <input class="search-input" type="text" placeholder="Search here" />
         </div>
-        <div class="menubar">
-            <div class="topnav">
-                <a  href="#boards">Boards</a>
-                <a  href="#boots">Boots</a>
-                <a  href="#bindinds">Bindings</a>
-                <a href="#safety">Safety</a>
-                <a href="#wear">Wear</a>
-                <a href="#others">Others</a>
-                <a  href="#news">News</a>
-            </div>
+        <img class="img-logo" src="/public/images/logo-name.png" alt="ShredCult" />
+        <div class="icons-right">
+          <span class="material-symbols-outlined">favorite</span>
+          <span class="material-symbols-outlined">shopping_cart</span>
         </div>
-    </header>
+      </div>
+    </div>
+    <div class="menubar">
+      <div class="topnav">
+        <a href="#boards">Boards</a>
+        <a href="#boots">Boots</a>
+        <a href="#bindinds">Bindings</a>
+        <a href="#safety">Safety</a>
+        <a href="#wear">Wear</a>
+        <a href="#others">Others</a>
+        <a href="#news">News</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="label-sale">
+      <img class="green-papper-bg" src="/public/images/deals-bg.png" alt="">
+      <div class="sale-text-container">
+        <h3 class="sale-title">BEST DEALS FOR YOU!</h3>
+        <h1 class="sale-text">GET THE LAST SEASON GEAR FOR 60% OF THE ORIGINAL PRICE! <button class="button-shop-sale">TAKE ME THERE!</button></h1>
+      </div>
+    </div>
+    <div class="grid-promos">
+      <div class="small">
+        <a href="url link">
+          <img src="/public/products/boards/burton-flying-v.png">
+          <div class="centered">BURTON CUSTOM FLYING V</div>
+          <div class="centered2">$630.95</div>
+        </a>
+      </div>
+      <div class="small">
+        <a href="url link2">
+          <img src="/public/products/boards/yesayer-camber-25-woman.png">
+          <div class="centered">BURTON YEASAYER</div>
+          <div class="centered2">$363.96</div>
+        </a>
+      </div>
+      <div class="small">
+        <a href="url link3">
+          <img src="/public/products/boots/vans-hellbound-men.png">
+          <div class="centered">VANS HELLBOUND MEN</div>
+          <div class="centered2">$240.95</div>
+        </a>
+      </div>
+      <div class="small">
+        <a href="url link4">
+          <img src="/public/products/gloves/crabgrab-mitten-yellow.png">
+          <div class="centered">CRABGRAB CHOPP MITT</div>
+          <div class="centered2">$85.00</div>
+        </a>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
