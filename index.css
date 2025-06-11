@@ -1,0 +1,155 @@
+:root {
+    --light-grey: #dddcdc;
+    --white-ice: #f0f0f0;
+    --pure-black: #0d0d0d;
+    --dark-green: #1d301d;
+    --light-green: #567d46;
+    --mid-gren: #2f4f2f;
+}
+
+@font-face {
+    font-family: 'rough_splash';
+    src: url('public/fonts/Rough_Slash.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container principal do header */
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Seção superior com logos e texto */
+.sc-collection {
+    background-color: rgb(0, 0, 0);
+    font-size: 25px;
+    color: aliceblue;
+    font-weight: bold;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.img-logo-bear {
+    width: 50px;
+    height: auto;
+}
+
+.shredcult-font {
+    font-family: rough_splash, sans-serif;
+    color: var(--light-green);
+    font-size: 28px;
+}
+
+.button-here {
+    color: var(--light-green);
+    padding: 2px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button-here:hover {
+    color: var(--white-ice);
+}
+
+/* Container da área de input e logo centralizada */
+.search-tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    width: 100%;
+    margin-top: -0px; 
+}
+
+/* Estilo do input */
+.search-input-div {
+    position: relative;
+    margin-top: 100px; 
+}
+
+.search-input {
+    width: 300px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid var(--dark-green);
+    outline: none;
+    padding-left: 40px;
+    margin-left: 150px;
+    
+}
+
+.search-input-div .material-symbols-outlined {
+    position: absolute;
+    left: 160px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--dark-green);
+    pointer-events: none;
+}
+
+/* Logo no centro */
+.img-logo {
+    width: 500px;
+    height: auto;
+    margin-right:150px ; 
+    margin-top: 50px; 
+}
+.icons-right {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    margin-top: 108px;
+    margin-right: 80px;
+}
+
+.icons-right .material-symbols-outlined {
+    font-size: 40px;
+    color: var(--dark-green);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.icons-right .material-symbols-outlined:hover {
+    color: var(--light-green);
+}
+
+.topnav {
+background-color: var(--mid-gren);
+display: flex;
+justify-content: space-evenly; /* Distribui igualmente com espaçamento */
+align-items: center;
+padding: 3px 0;
+
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: var(--white-ice);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: var(--mid-gren);
+}
+.topnav a:hover{
+    color: var(--light-green);
+    transition: color 0.3s;
+    
+}
+
