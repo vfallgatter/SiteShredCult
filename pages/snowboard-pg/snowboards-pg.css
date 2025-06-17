@@ -1,177 +1,190 @@
 :root {
-    --light-grey: #dddcdc;
-    --white-ice: #f0f0f0;
-    --pure-black: #0d0d0d;
-    --dark-green: #1d301d;
-    --light-green: #567d46;
-    --mid-gren: #2f4f2f;
-    --lighter-green: #98dd7d;
-    --vibrant-green: #6deb3b;
+  --light-grey: #dddcdc;
+  --white-ice: #f0f0f0;
+  --pure-black: #0d0d0d;
+  --dark-green: #1d301d;
+  --light-green: #567d46;
+  --mid-gren: #2f4f2f;
+  --lighter-green: #98dd7d;
+  --vibrant-green: #6deb3b;
 }
 
 @font-face {
-    font-family: 'rough_splash';
-    src: url('public/fonts/Rough_Slash.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'rough_splash';
+  src: url('public/fonts/Rough_Slash.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
-    font-family: "DM Sans", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .sc-collection {
-    background-color: rgb(0, 0, 0);
-    font-size: clamp(14px, 2vw, 25px);
-    color: aliceblue;
-    font-weight: bold;
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    text-align: center;
+  background-color: rgb(0, 0, 0);
+  font-size: clamp(14px, 2vw, 25px);
+  color: aliceblue;
+  font-weight: bold;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .img-logo-bear {
-    width: clamp(30px, 5vw, 50px);
-    height: auto;
+  width: clamp(30px, 5vw, 50px);
+  height: auto;
 }
 
 .shredcult-font {
-    font-family: rough_splash, sans-serif;
-    color: var(--light-green);
-    font-size: clamp(16px, 3vw, 28px);
-    padding-left: 4px;
-    padding-right: 4px;
+  font-family: rough_splash, sans-serif;
+  color: var(--light-green);
+  font-size: clamp(16px, 3vw, 28px);
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .button-here {
-    color: var(--light-green);
-    padding: 2px;
-    border-radius: 20px;
-    font-size: clamp(16px, 3vw, 30px);
-    font-weight: bold;
-    cursor: pointer;
+  color: var(--light-green);
+  padding: 2px;
+  border-radius: 20px;
+  font-size: clamp(16px, 3vw, 30px);
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .button-here:hover {
-    color: var(--white-ice);
-    transition: color 0.3s;
+  color: var(--white-ice);
+  transition: color 0.3s;
 }
+
 .carrossel {
-      width: 100%;
-      height: 400px;
-      
-      overflow: hidden;
-      
-      position: relative;
-    }
+  width: 100%;
+  height: 400px;
 
-    .slides {
-      display: flex;
-      width: 300%;
-      transition: transform 0.5s ease-in-out;
-    }
+  overflow: hidden;
 
-    .slide {
-      width: 100%;
-      flex-shrink: 0;
-      height: 100%; 
-    }
-    .slide img {
-     margin: 0;
-      display: flex;
-    }
+  position: relative;
+}
 
-    .botoes {
-      position: absolute;
-      top: 50%;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      transform: translateY(-50%);
-    }
+.slides {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease-in-out;
+}
 
-    .botoes button {
-      background-color: rgba(0, 0, 0, 0.5);
-      border: none;
-      color: white;
-      padding: 10px;
-      cursor: pointer;
-    }
-   .gender-filter {
-      display: flex;
-      width: 100%;
-    }
-    .gender-titles{
-      display: flex;
-      justify-content: space-evenly;
-      
-      gap: 23%;
-      padding: 4px;
-      flex: 0;
-    }
-    .gender-titles h3{
-      font-family: rough_splash, sans-serif;
-      color: var(--dark-green);
-      font-size: 35px;
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+  height: 100%;
+}
 
-    }
+.slide img {
+  margin: 0;
+  display: flex;
+}
 
-  .gender-img {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    flex: 1;
-  }
+.botoes {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
 
-  .holo-bg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 450px;
-  }
+.botoes button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
 
-  .holo-bg-img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-  }
+.gender-filter {
+  display: flex;
+  width: 100%;
+}
 
-  /* Mostrar apenas elementos com a classe "show" */
+.gender-titles {
+  display: flex;
+  justify-content: space-evenly;
+
+  gap: 23%;
+  padding: 4px;
+  flex: 0;
+}
+
+.gender-titles h3 {
+  font-family: rough_splash, sans-serif;
+  color: var(--dark-green);
+  font-size: 35px;
+
+}
+
+.gender-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  flex: 1;
+}
+
+.holo-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+}
+
+.holo-bg-img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Mostrar apenas elementos com a classe "show" */
 .filterDiv {
-  
-  display: none; /* escondido por padrão */
+
+  display: none;
+  /* escondido por padrão */
 }
 
 .filterDiv.show {
-  display: block; /* mostra quando tiver a classe "show" */
+  display: block;
+  /* mostra quando tiver a classe "show" */
 }
 
 /* Botões de filtro */
 #button_container {
   display: flex;
   text-align: center;
-  gap: 20px; /* espaço entre os elementos */
-  margin-top: 30px; /* move tudo um pouco mais para baixo */
+  gap: 20px;
+  /* espaço entre os elementos */
+  margin-top: 30px;
+  /* move tudo um pouco mais para baixo */
   margin: 20px 0;
   background-color: var(--mid-gren);
   padding: 15px;
@@ -186,7 +199,7 @@ body {
   margin-left: 20px;
   border: 1px solid #ccc;
   background-color: white;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .search-input {
@@ -199,8 +212,8 @@ body {
   border: none;
   outline: none;
   padding: 12px 20px;
-  margin: 5px;  
-  
+  margin: 5px;
+
   cursor: pointer;
   border-radius: 10px;
   font-weight: bold;
@@ -209,7 +222,7 @@ body {
 .btn:hover {
   transition: color 0.3s;
   color: var(--pure-black);
-  background-color:var(--light-grey);
+  background-color: var(--light-grey);
 }
 
 .btn.active {
@@ -217,63 +230,65 @@ body {
   color: white;
 }
 
-.banner-newest-boards{
+.banner-newest-boards {
   padding-top: 40px;
 }
+
 .grid-promos {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    padding: 0 15px;
-    justify-content: center;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 0 15px;
+  justify-content: center;
 }
+
 .small {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    min-height: 400px;
-    position: relative;
-    overflow: hidden;
-    outline: 2px solid var(--pure-black);
-    border-radius: 30px;
-    transition: transform 0.5s ease;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid var(--pure-black);
+  border-radius: 30px;
+  transition: transform 0.5s ease;
+  margin: 0 auto;
 }
 
 .small img {
-    width: 100%;
-    height: 70%;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
-    padding: 10px;
+  width: 100%;
+  height: 70%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 .small:hover {
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .centered {
-    position: absolute;
-    left: 20px;
-    bottom: 50px;
-    font-size: clamp(14px, 2vw, 20px);
-    color: var(--dark-green);
-    font-weight: bold;
-    transition: font-size 0.5s ease;
+  position: absolute;
+  left: 20px;
+  bottom: 50px;
+  font-size: clamp(14px, 2vw, 20px);
+  color: var(--dark-green);
+  font-weight: bold;
+  transition: font-size 0.5s ease;
 }
 
 .centered2 {
-    position: absolute;
-    left: 20px;
-    bottom: 20px;
-    font-size: clamp(16px, 2.5vw, 25px);
-    color: var(--light-green);
-    font-weight: bold;
-    transition: font-size 0.5s ease;
-}
-.banner-shredcult-collection{
-  padding-top: 40px;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size: clamp(16px, 2.5vw, 25px);
+  color: var(--light-green);
+  font-weight: bold;
+  transition: font-size 0.5s ease;
 }
 
+.banner-shredcult-collection {
+  padding-top: 40px;
+}

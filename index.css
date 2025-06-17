@@ -144,12 +144,14 @@ body {
 
 .topnav a {
     color: var(--white-ice);
-    text-align:center;
-    padding: 14px 80px; /* Fixed padding instead of responsive */
+    text-align: center;
+    padding: 14px 80px;
+    /* Fixed padding instead of responsive */
     text-decoration: none;
     font-size: clamp(12px, 2vw, 17px);
     background-color: var(--mid-gren);
-    margin: 0 5px; /* Adds horizontal spacing */
+    margin: 0 5px;
+    /* Adds horizontal spacing */
 }
 
 .topnav a:hover {
@@ -210,7 +212,47 @@ body {
     color: var(--lighter-green);
     transition: all 0.3s;
 }
-.h1-title-section{
+
+.gender-titles {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    gap: 23%;
+    padding: 4px;
+    flex: 0;
+}
+
+.gender-titles h3 {
+    font-family: rough_splash, sans-serif;
+    color: var(--dark-green);
+    font-size: 35px;
+
+}
+
+.gender-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex: 1;
+}
+
+.holo-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+}
+
+.holo-bg-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.h1-title-section {
     font-family: 'rough_splash';
     margin-top: 20px;
     padding: 20px;
@@ -282,24 +324,24 @@ body {
         justify-content: space-between;
         padding: 20px 40px;
     }
-    
+
     .search-input-div {
         width: auto;
         margin: 0;
     }
-    
+
     .search-input {
         width: 300px;
     }
-    
+
     .icons-right {
         gap: 40px;
     }
-    
+
     .topnav {
         flex-wrap: nowrap;
     }
-    
+
     .label-sale {
         height: 300px;
     }
@@ -309,16 +351,17 @@ body {
     .sc-collection {
         gap: 20px;
     }
-    
+
     .icons-right {
         gap: 70px;
     }
-    
+
     .small {
         border-radius: 70px;
     }
 }
-.more-options-offers{
+
+.more-options-offers {
     font-weight: bold;
     padding: 7px;
     margin-left: 30%;
@@ -328,66 +371,70 @@ body {
     background-color: var(--light-green);
     color: var(--light-grey);
     border: 2px solid var(--dark-green)
-
 }
-.more-options-offers:hover{
+
+.more-options-offers:hover {
     background-color: var(--light-grey);
     color: var(--light-green);
     border: 2px solid var(--pure-black);
     cursor: pointer;
     transition: color 0.3s;
 }
+
 .image-grid {
-  display: flex; 
-  align-items: flex-start; 
-  gap: 20px; 
-  margin-left: 80px;
-  margin-top: 60px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-left: 80px;
+    margin-top: 60px;
 }
 
 .cardboard {
-  display: flex;
-  margin-bottom: 40px;
-  position: relative; 
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
 }
 
 .image-overlay {
-  position: relative; 
-  width: 100%; 
+    position: relative;
+    width: 100%;
 }
 
 .cardboard-bg {
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  display: block; 
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    display: block;
 }
 
 .news-picture {
-  position: absolute; 
-  max-width: 90%;
-  bottom: 10px; 
-  left: 40px; 
-  z-index: 1;
-  top: 75px;
+    position: absolute;
+    max-width: 90%;
+    bottom: 10px;
+    left: 40px;
+    z-index: 1;
+    top: 75px;
 }
 
 .post-content {
-  flex: 1; 
+    flex: 1;
 }
-.official-sticker{
+
+.official-sticker {
     width: 300px;
     margin-left: 620px;
     padding-top: 55px;
-    
+
 }
-.post-title{
+
+.post-title {
     font-family: rough_splash;
     text-align: center;
     margin-bottom: 10px;
-    color:var(--light-green);
+    color: var(--light-green);
 }
-.post-text{
+
+.post-text {
     margin-top: 30px;
     width: 90%;
     margin-left: 30px;

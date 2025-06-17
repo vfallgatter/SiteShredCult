@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShredCult</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/pages/snowboard-pg/snowboards-pg.css" />
+    <link rel="icon" href="/public/images/favicon.ico" type="image/x-icon" />
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="sc-collection">
+                <img class="img-logo-bear" src="/public/images/logo.png" alt="ShredBear" />
+                <p>
+                    GET YOUR NEW <span class="shredcult-font"> boots</span> FOR THE NEXT SEASON HERE!
+                </p>
+                <img class="img-logo-bear" src="/public/images/logo.png" alt="ShredBear" />
+            </div>
+            <div class="search-tab">
+                <div class="search-input-div">
+                    <span class="material-symbols-outlined">search</span>
+                    <input class="search-input" type="text" placeholder="Search here" />
+                </div>
+                <a href="/index.html">
+                    <img class="img-logo" src="/public/images/logo-name.png" alt="ShredCult" />
+                </a>
+
+
+                <div class="icons-right">
+                    <span class="material-symbols-outlined">favorite</span>
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                </div>
+            </div>
+        </div>
+        <div class="menubar">
+            <div class="topnav">
+                <a href="/pages/snowboard-pg/snowboards-pg.html">Boards</a>
+                <a href="/pages/snowboots-pg/snowboots-pg.html">Boots</a>
+                <a href="#bindinds">Bindings</a>
+                <a href="#safety">Safety</a>
+                <a href="#wear">Wear</a>
+                <a href="#news">Gloves</a>
+                <a href="#others">Others</a>
+                <a href="#news">News</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="carrossel">
+            <div class="slides" id="slides">
+                <div class="slide">
+
+                    <img src="/public/banners/snowboot-banner.png" alt="Snow Boots Here!">
+
+                </div>
+                <div class="slide">
+                    <a href="#shredcult-collection">
+                        <img src="/public/banners/vansboots-banenr.png" alt="Vans Boots on Sale">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="botoes">
+                <button onclick="voltar()">◀</button>
+                <button onclick="avancar()">▶</button>
+            </div>
+        </div>
+
+        <!-- Filtro de categorias -->
+        <div id="button_container">
+            <div class="search-input-div">
+                <span class="material-symbols-outlined">search</span>
+                <input class="search-input" type="text" placeholder="Search here" />
+            </div>
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('men')"> Mens</button>
+            <button class="btn" onclick="filterSelection('woman')"> Womans</button>
+            <button class="btn" onclick="filterSelection('kids')"> Kids</button>
+        </div>
+
+        <!-- MEN PRODUCTS -->
+        <div class="grid-promos container">
+
+            <div class="filterDiv small men">
+                <a href="url-link1">
+                    <img src="/public/products/boots/k2 Maysis 2023.png" alt="">
+                    <div class="centered">K2 MAYSIS 2023</div>
+                    <div class="centered2">$385.00</div>
+                </a>
+            </div>
+
+            <div class="filterDiv small men">
+                <a href="url-link1">
+                    <img src="/public/products/boots/K2 Maysis Clicker™ X HB Men's.png" alt="">
+                    <div class="centered">K2 MAYSIS CLICKER X HB</div>
+                    <div class="centered2">$415.00</div>
+                </a>
+            </div>
+
+            <div class="filterDiv small men">
+                <a href="url-link1">
+                    <img src="/public/products/boots/K2 Waive Unisex Snowboard Boots.png" alt="">
+                    <div class="centered">K2 WAIVE UNISEX BOOT 2025</div>
+                    <div class="centered2">$585.00</div>
+                </a>
+            </div>
+
+            <div class="filterDiv small men">
+                <a href="url-link1">
+                    <img src="/public/products/boots/K2_Maysis_Wide_Men_s_Snowboard_Boots_2025.png" alt="">
+                    <div class="centered">K2 MAYSIS WIDE MENS</div>
+                    <div class="centered2">$475.00</div>
+                </a>
+            </div>
+
+            <div class="filterDiv small men">
+                <a href="url-link1">
+                    <img src="/public/products/boots/MEN'S LASHED DOUBLE BOA® SNOWBOARD BOOTS.png" alt="">
+                    <div class="centered">MEN'S LASHED DOUBLE BOA® SNOWBOARD BOOTS</div>
+                    <div class="centered2">$225.00</div>
+                </a>
+            </div>
+
+            <div class="filterDiv small men">
+                <a href="url-link1">
+                    <img src="/public/products/boots/MEN'S LASHED DOUBLE BOA® X CRAB GRAB SNOWBOARD BOOTS.png" alt="">
+                    <div class="centered">MEN'S LASHED DOUBLE BOA® X CRAB GRAB SNOWBOARD BOOTS</div>
+                    <div class="centered2">$215.00</div>
+                </a>
+            </div>
+            <div class="filterDiv small men">
+                <a href="url-link1">
+                    <img src="/public/products/boots/MEN'S LASHED DOUBLE BOA® X FAVA SNOWBOARD BOOTS Brown.png" alt="">
+                    <div class="centered">MEN'S LASHED DOUBLE BOA® X FAVA SNOWBOARD BOOTS BROWN</div>
+                    <div class="centered2">$245.00</div>
+                </a>
+            </div>
+            <div class="filterDiv small men">
+                <a href="url-link1">
+                    <img src="/public/products/boots/MEN'S LASHED DOUBLE BOA® X VIZZ SNOWBOARD BOOTS.png" alt="">
+                    <div class="centered">MEN'S LASHED DOUBLE BOA® X VIZZ SNOWBOARD BOOTS</div>
+                    <div class="centered2">$235.00</div>
+                </a>
+            </div>
+            <div class="filterDiv small men">
+                <a href="url-link1">
+                    <img src="/public/products/boots/MEN'S LASHED X POWELL SNOWBOARD BOOTS green.png" alt="">
+                    <div class="centered">MEN'S LASHED X POWELL SNOWBOARD BOOTS GREEN</div>
+                    <div class="centered2">$245.00</div>
+                </a>
+            </div>
+            <div class="filterDiv small men">
+                <a href="url-link1">
+                    <img src="/public/products/boots/MEN'S LASHED X POWELL SNOWBOARD BOOTS Blue.png" alt="">
+                    <div class="centered">MEN'S LASHED X POWELL SNOWBOARD BOOTS BLUE.png</div>
+                    <div class="centered2">$215.00</div>
+                </a>
+            </div>
+
+            <div class="filterDiv small men">
+                <a href="url link4">
+                    <img src="/public/products/boots/Hi-Standard OG Snowboard Boot brown.png">
+                    <div class="centered">VANS HI-STANDARD OG BROWN</div>
+                    <div class="centered2">$300.00</div>
+                </a>
+            </div>
+            <div class="filterDiv small men">
+                <a href="url link4">
+                    <img src="/public/products/boots/Hi-Standard Pro Snowboard Boot black.png">
+                    <div class="centered">VANS HI-STANDARD PRO BLACK</div>
+                    <div class="centered2">$320.00</div>
+                </a>
+            </div>
+            <div class="filterDiv small men">
+                <a href="url link4">
+                    <img src="/public/products/boots/Hi-Standard Pro Snowboard Boot.png">
+                    <div class="centered">VANS HI-STANDARD PRO</div>
+                    <div class="centered2">$310.00</div>
+                </a>
+            </div>
+            <div class="filterDiv small men">
+                <a href="url link4">
+                    <img src="/public/products/boots/VANS HI-STANDARD OG Drawings.png">
+                    <div class="centered">VANS HI-STANDARD OG DRAWINGS KIDS</div>
+                    <div class="centered2">$210.00</div>
+                </a>
+            </div>
+            <div class="filterDiv small men">
+                <a href="url link4">
+                    <img src="/public/products/boots/vans-hellbound-men.png">
+                    <div class="centered">VANS HELLBOUND MEN</div>
+                    <div class="centered2">$350.00</div>
+                </a>
+            </div>
+            <div class="filterDiv small men">
+                <a href="url link4">
+                    <img src="/public/products/boots/Womens Hi-Standard OG Snowboard Boot.png">
+                    <div class="centered">VANS HI-STANDARD OG WOMANS</div>
+                    <div class="centered2">$310.00</div>
+                </a>
+            </div>
+
+
+
+            <!-- WOMAN PRODUCTS -->
+
+            <div class="filterDiv small woman">
+                <a href="url-link2">
+                    <img src="/public/products/boots/K2 Haven Women's Snowboard Boots 2025.png" alt="">
+                    <div class="centered">K2 HAVEN WOMANS 2025</div>
+                    <div class="centered2">$399.00</div>
+                </a>
+            </div>
+
+            <div class="filterDiv small woman">
+                <a href="url-link2">
+                    <img src="/public/products/boots/K2 Waive Unisex Snowboard Boots.png" alt="">
+                    <div class="centered">K2 WAIVE UNISEX BOOT 2025</div>
+                    <div class="centered2">$349.00</div>
+                </a>
+            </div>
+
+            <div class="filterDiv small woman">
+                <a href="url-link2">
+                    <img src="/public/products/boots/WOMEN'S LASHED X VOLCOM SNOWBOARD BOOTS.png" alt="">
+                    <div class="centered">WOMEN'S LASHED X VOLCOM SNOWBOARD BOOTS</div>
+                    <div class="centered2">169.00</div>
+                </a>
+            </div>
+
+            <div class="filterDiv small woman">
+                <a href="url-link2">
+                    <img src="/public/products/boots/WOMEN'S SHIFTY SNOWBOARD BOOTS.png" alt="">
+                    <div class="centered">WOMEN'S SHIFTY SNOWBOARD BOOTS.png</div>
+                    <div class="centered2">$149.00</div>
+                </a>
+            </div>
+            <div class="filterDiv small woman">
+                <a href="url link4">
+                    <img src="/public/products/boots/Womens Hi-Standard OG Snowboard Boot.png">
+                    <div class="centered">VANS HI-STANDARD OG WOMANS</div>
+                    <div class="centered2">$310.00</div>
+                </a>
+            </div>
+            <div class="filterDiv small woman">
+                <a href="url link4">
+                    <img
+                        src="/public/products/boots/Womens Hi-Standard Pro X Jill Perkins Snowboard Boot Brown_White.png">
+                    <div class="centered">VANS HI-STANDARD PRO X JILL PERKINS BROWN/WHITE</div>
+                    <div class="centered2">$350.00</div>
+                </a>
+            </div>
+            <div class="filterDiv small woman">
+                <a href="url link4">
+                    <img src="/public/products/boots/Womens Hi-Standard Pro X Jill Perkins Snowboard Boot.png">
+                    <div class="centered">VANS HI-STANDARD PRO X JILL PERKINS</div>
+                    <div class="centered2">$350.00</div>
+                </a>
+            </div>
+
+
+
+            <!-- KIDS PRODUCTS -->
+
+            <div class="filterDiv small kids">
+                <a href="url-link3">
+                    <img src="/public/products/boots/K2 Mini Turbo Youth Snowboard Boots 2025.png" alt="">
+                    <div class="centered">K2 MINI TURBO YOUTH BOOTS</div>
+                    <div class="centered2">$349.00</div>
+                </a>
+            </div>
+
+            <div class="filterDiv small kids">
+                <a href="url-link3">
+                    <img src="/public/products/boots/VANS HI-STANDARD OG Drawings.png" alt="">
+                    <div class="centered">VANS HI-STANDARD OG DRAWINGS</div>
+                    <div class="centered2">$329.00</div>
+                </a>
+            </div>
+
+
+
+        </div>
+
+        </div>
+        <div id="shredcult-collection" class="shredcult-collection">
+            <div class="img-banner">
+                <img class="banner-shredcult-collection" src="/public/banners/vansboots-banenr.png" alt="Vans Boots">
+            </div>
+        </div>
+        <div class="grid-promos">
+            <div class="small">
+                <a href="url link4">
+                    <img src="/public/products/boots/Hi-Standard OG Snowboard Boot brown.png">
+                    <div class="centered">VANS HI-STANDARD OG BROWN</div>
+                    <div class="centered2">$300.00</div>
+                </a>
+            </div>
+            <div class="small">
+                <a href="url link4">
+                    <img src="/public/products/boots/Hi-Standard Pro Snowboard Boot black.png">
+                    <div class="centered">VANS HI-STANDARD PRO BLACK</div>
+                    <div class="centered2">$320.00</div>
+                </a>
+            </div>
+            <div class="small">
+                <a href="url link4">
+                    <img src="/public/products/boots/Hi-Standard Pro Snowboard Boot.png">
+                    <div class="centered">VANS HI-STANDARD PRO</div>
+                    <div class="centered2">$310.00</div>
+                </a>
+            </div>
+            <div class="small">
+                <a href="url link4">
+                    <img src="/public/products/boots/VANS HI-STANDARD OG Drawings.png">
+                    <div class="centered">VANS HI-STANDARD OG DRAWINGS KIDS</div>
+                    <div class="centered2">$210.00</div>
+                </a>
+            </div>
+            <div class="small">
+                <a href="url link4">
+                    <img src="/public/products/boots/vans-hellbound-men.png">
+                    <div class="centered">VANS HELLBOUND MEN</div>
+                    <div class="centered2">$350.00</div>
+                </a>
+            </div>
+            <div class="small">
+                <a href="url link4">
+                    <img src="/public/products/boots/Womens Hi-Standard OG Snowboard Boot.png">
+                    <div class="centered">VANS HI-STANDARD OG WOMANS</div>
+                    <div class="centered2">$310.00</div>
+                </a>
+            </div>
+            <div class="small">
+                <a href="url link4">
+                    <img
+                        src="/public/products/boots/Womens Hi-Standard Pro X Jill Perkins Snowboard Boot Brown_White.png">
+                    <div class="centered">VANS HI-STANDARD PRO X JILL PERKINS BROWN/WHITE</div>
+                    <div class="centered2">$350.00</div>
+                </a>
+            </div>
+            <div class="small">
+                <a href="url link4">
+                    <img src="/public/products/boots/Womens Hi-Standard Pro X Jill Perkins Snowboard Boot.png">
+                    <div class="centered">VANS HI-STANDARD PRO X JILL PERKINS</div>
+                    <div class="centered2">$350.00</div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+        </div>
+    </main>
+    <script src="snowboots-pg.js"></script>
+</body>
+
+</html>
